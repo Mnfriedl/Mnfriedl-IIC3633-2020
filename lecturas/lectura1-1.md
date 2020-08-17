@@ -1,0 +1,9 @@
+# Personal opinion on:
+
+### Sarwar, B., Karypis, G., Konstan, J., & Riedl, J. (2001). Item-based collaborative filtering recommendation algorithms. In Proceedings of the 10th international conference on World Wide Web (pp. 285-295).
+
+To start things off, I'd like to mention that I really liked that they explained, in detail, how a collaborative filtering recommender system works, both user based and item based, making it a solid read for readers new to the subject. All the definitions are clear and the math is complete and well explained, and to top it off, the structure it followed through the paper made for a really smooth reading experience.
+
+Moving onto more technical aspects, I feel like the data selection was not very representative of how a real world problem would look like. The authors chose to consider users who only had rated 20 or more movies, which is something that doesn't represent reality. In fact, in reality, coming up with recommendations for new users, with a low number of given rating, or even zero, is a great problem, which is totally ignored in this case.
+
+A second aspect I'd argue could've been done different is the size of the dataset. They went for a dataset of 100000 ratings, which, seems pretty small when compared to datasets in some real life recommender systems. Why is this important? Well, because the focus of the paper was on the scalability versus performance of the models. The whole paper aims to show that their proposed method had a better scalability, while also maintaining the performance of much slower methods. Using datasets of varying size, and showing how it would affect the performance of the models would've been nice, probably, using at least one really big dataset, as the ones we would have in big real life applications.
