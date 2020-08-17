@@ -1,1 +1,1 @@
-# lecturasIIC3633-2020
+# Personal repository for IIC3633 - Recommender systems
