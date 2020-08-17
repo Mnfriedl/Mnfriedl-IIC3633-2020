@@ -1,0 +1,11 @@
+# Personal opinion on:
+
+### [Original post FunkSVD](https://sifter.org/~simon/journal/20061211.html)
+
+This reading felt a little weird at the beginning. It wasn't an academic publish of a research, it was more of a personal blog trying to explain a method the author had come up wih for recommender systems. Despite the initial feeling, I ended up liking this way of writing and explaining, with less formalities. Something I felt was lacking though, was the explicit math. In traditional papers, the math is usually explicit, but in this case, everything was boiled down to words, and a little of *pseudo-code*, which made it harder to understand how things worked _under the hood_. Actually, I had to search for a more practical explanation online of how the algorithm performed the math to obtain the latent factors.
+
+Speaking of, I really like the idea behind the extraction of latent factors that describe an item. It reminds me of embeddings obtained through deep learning (although this are more recent methods). I would say this is really similar to word embeddings, like Word2Vec, for natural language processing and sentiment analysis, or also the embeddings used in image description for face recognition, with nets like FaceNet.
+
+Making a description of the items, and scoring how much a user likes every description helps to reduce the amount of data points needed in the recommender system. This method not only has really good performace, but also has a great scalability in comparison with a model that considers the whole dataset that was used in this case. As noted in the post, they went from 8.5 billion data points, to about 20 million, which is 400 times less.
+
+Something I would've liked to see in here is a comparison to another methods of building recommender systems. Both in scalability and performance, to be able to have some grasp into how it compares to them. It is understandable that this wasn't part of the post, as it wasn't the goal of it, and, again, this is not a formal academic publish, but it would've given the post a lot more weight when taken in consideration against other methods.
