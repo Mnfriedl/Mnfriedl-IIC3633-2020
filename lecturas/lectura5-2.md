@@ -8,7 +8,7 @@ After the introductions, the authors move onto a quick explanation of the collab
 
 After this, they explain several ways of performing the blending of the results. They took several typical machine learning algorithms for decision making. Something interesting can be found in the NN description. Quoting the authors: 
 
-> The output neuron has a sigmoid activation function with an output swing of -1 to +1. To generate rating predictions in the range of [1; 5] we use a simple output transformation. For example the output is multiplied by <img src="https://render.githubusercontent.com/render/math?math=\alpha"> = 3:6 and the constant <img src="https://render.githubusercontent.com/render/math?math=\beta"> = 3:0 is added.
+> The output neuron has a sigmoid activation function with an output swing of -1 to +1. To generate rating predictions in the range of [1; 5] we use a simple output transformation. For example the output is multiplied by <img src="https://render.githubusercontent.com/render/math?math=\alpha"> = 3:6 and the constant <img src="https://render.githubusercontent.com/render/math?math=\beta"> = 3:0 is added.
 
 They used this to make a transformation from a [-1, 1] range to a [1, 5] range, but the results doesn't add up. If we take the borders, <img src="https://render.githubusercontent.com/render/math?math=-1 * 3.6 + 3 = -0.6"> and <img src="https://render.githubusercontent.com/render/math?math=1 * 3.6 + 3 = 6.6">, resulting in a [-0.6, 6.6] range.
 
